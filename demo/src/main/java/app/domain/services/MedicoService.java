@@ -2,13 +2,14 @@ package app.domain.services;
 
 import app.domain.model.Medico;
 import app.domain.ports.Repository.MedicoRepositoryPort;
+import app.application.port.in.MedicoUseCase;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;   // ✅ IMPORTANTE
 
 @Service
-public class MedicoService {
+public class MedicoService implements MedicoUseCase {
 
     private final MedicoRepositoryPort medicoRepositoryPort;
 

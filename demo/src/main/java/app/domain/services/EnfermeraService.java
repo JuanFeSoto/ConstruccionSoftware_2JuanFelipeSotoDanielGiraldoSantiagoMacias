@@ -3,13 +3,14 @@ package app.domain.services;
 
 import app.domain.model.Enfermera;
 import app.domain.ports.Repository.EnfermeraRepositoryPort;
+import app.application.port.in.EnfermeraUseCase;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class EnfermeraService {
+public class EnfermeraService implements EnfermeraUseCase {
 
     private final EnfermeraRepositoryPort enfermeraRepository;
 

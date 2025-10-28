@@ -1,15 +1,15 @@
 package app.domain.services;
 
-
 import app.domain.model.RegistroHistoria;
 import app.domain.ports.Repository.RegistroHistoriaRepository;
+import app.application.port.in.RegistroHistoriaUseCase;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class RegistroHistoriaService {
+public class RegistroHistoriaService implements RegistroHistoriaUseCase {
 
     private final RegistroHistoriaRepository registroHistoriaRepository;
 

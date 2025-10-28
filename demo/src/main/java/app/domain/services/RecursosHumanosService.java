@@ -2,13 +2,14 @@ package app.domain.services;
 
 import app.domain.model.RecursosHumanos;
 import app.domain.ports.Repository.RecursosHumanosRepositoryPort;
+import app.application.port.in.RecursosHumanosUseCase;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class RecursosHumanosService {
+public class RecursosHumanosService implements RecursosHumanosUseCase {
 
     private final RecursosHumanosRepositoryPort rhRepository;
 

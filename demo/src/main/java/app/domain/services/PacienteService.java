@@ -1,16 +1,15 @@
 package app.domain.services;
 
-
-
 import app.domain.model.Paciente;
 import app.domain.ports.Repository.PacienteRepository;
+import app.application.port.in.PacienteUseCase;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class PacienteService {
+public class PacienteService implements PacienteUseCase {
 
     private final PacienteRepository pacienteRepository;
 

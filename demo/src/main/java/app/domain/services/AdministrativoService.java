@@ -8,9 +8,10 @@ import org.springframework.stereotype.Service;
 
 import app.domain.model.Administrativo;
 import app.domain.ports.Repository.AdministrativoRepositoryPort;
+import app.application.port.in.AdministrativoUseCase;
 
 @Service
-public class AdministrativoService {
+public class AdministrativoService implements AdministrativoUseCase {
     @Autowired
     private  AdministrativoRepositoryPort administrativoRepositoryPort;
 

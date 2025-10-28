@@ -2,13 +2,14 @@ package app.domain.services;
 
 import app.domain.model.Usuario;
 import app.domain.ports.Repository.UsuarioRepositoryPort;
+import app.application.port.in.UsuarioUseCase;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UsuarioService {
+public class UsuarioService implements UsuarioUseCase {
 
     private final UsuarioRepositoryPort usuarioRepository;
 

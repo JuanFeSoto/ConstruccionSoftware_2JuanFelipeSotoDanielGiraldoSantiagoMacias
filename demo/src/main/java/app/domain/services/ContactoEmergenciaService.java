@@ -1,16 +1,15 @@
 package app.domain.services;
 
-
-
 import app.domain.model.ContactoEmergencia;
 import app.domain.ports.Repository.ContactoEmergenciaRepository;
+import app.application.port.in.ContactoEmergenciaUseCase;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ContactoEmergenciaService {
+public class ContactoEmergenciaService implements ContactoEmergenciaUseCase {
 
     private final ContactoEmergenciaRepository contactoEmergenciaRepository;
 
